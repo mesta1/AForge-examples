@@ -1,0 +1,43 @@
+﻿<Window x:Class="AForge.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:AForge.Wpf"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="MainWindow"
+        Width="422.669"
+        Height="350"
+        mc:Ignorable="d">
+    <Grid>
+        <Image x:Name="videoPlayer" Margin="10,0,10,70" />
+        <ComboBox x:Name="comboBox"
+                  Width="167"
+                  Height="21"
+                  Margin="10,0,0,25"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Bottom"
+                  DisplayMemberPath="Name"
+                  ItemsSource="{Binding VideoDevices}"
+                  SelectedItem="{Binding CurrentDevice}" />
+        <Label Width="167"
+               Height="24"
+               Margin="10,0,0,46"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Bottom"
+               Content="Select video source" />
+        <Button Width="67"
+                Height="21"
+                Margin="213,0,0,25"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Click="btnStart_Click"
+                Content="Start" />
+        <Button Width="67"
+                Height="21"
+                Margin="296,0,0,25"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Click="btnStop_Click"
+                Content="Stop" />
+    </Grid>
+</Window>
