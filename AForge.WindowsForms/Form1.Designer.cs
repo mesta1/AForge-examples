@@ -38,24 +38,26 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(426, 243);
+            this.pictureBox1.Size = new System.Drawing.Size(640, 480);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // cmbVideoSource
             // 
+            this.cmbVideoSource.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbVideoSource.FormattingEnabled = true;
-            this.cmbVideoSource.Location = new System.Drawing.Point(15, 270);
+            this.cmbVideoSource.Location = new System.Drawing.Point(15, 501);
             this.cmbVideoSource.Name = "cmbVideoSource";
             this.cmbVideoSource.Size = new System.Drawing.Size(219, 21);
             this.cmbVideoSource.TabIndex = 1;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 254);
+            this.label1.Location = new System.Drawing.Point(12, 485);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 2;
@@ -63,7 +65,8 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(240, 262);
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStart.Location = new System.Drawing.Point(240, 493);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(90, 29);
             this.btnStart.TabIndex = 3;
@@ -73,7 +76,8 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(336, 262);
+            this.btnStop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStop.Location = new System.Drawing.Point(336, 493);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(90, 29);
             this.btnStop.TabIndex = 4;
@@ -85,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 322);
+            this.ClientSize = new System.Drawing.Size(640, 534);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label1);

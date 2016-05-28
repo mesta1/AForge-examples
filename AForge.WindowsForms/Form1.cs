@@ -49,18 +49,8 @@ namespace AForge.WindowsForms
 
         private void video_NewFrame(object sender,NewFrameEventArgs eventArgs)
         {
-            // dispose previous image to avoid memory leak
-            if (pictureBox1.Image != null)
-            {
-                pictureBox1.Image.Dispose();
-            }
-            // get new frame
             Bitmap bitmap = (Bitmap)eventArgs.Frame.Clone();
-            
-            // here you can process the frame
-
             pictureBox1.Image = bitmap;
-            
         }
 
         private void btnStart_Click(object sender, EventArgs e)
