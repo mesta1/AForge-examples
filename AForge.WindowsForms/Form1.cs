@@ -63,7 +63,7 @@ namespace AForge.WindowsForms
         private void btnStop_Click(object sender, EventArgs e)
         {
             videoSource.SignalToStop();
-            if (pictureBox1.Image != null)
+            if (videoSource != null && videoSource.IsRunning && pictureBox1.Image != null)
             {
                 pictureBox1.Image.Dispose();
             }
